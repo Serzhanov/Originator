@@ -48,34 +48,45 @@ for t in set-the-clock arrange-the-venn match-the-style align-the-row; do
 done
 ```
 
-## Thought process
+## Thought process & curriculum thinking
 
-The reference task (`yellow-circle-in-blue-box`) probes one thing: visual containment of one
-shape in another. It already scores ~60% on prior Claude models, which told me two things:
-(1) difficulty in this gym comes from **UI-tool friction, precision, and judgment**, not from
-the number of actions; and (2) a good curriculum should fan out across *different* capabilities
-rather than re-skin the same containment check at different sizes.
+### Starting observation
+The reference task (`yellow-circle-in-blue-box`) probes one thing — visual containment — and
+already scores ~60% on prior Claude models. That told me two things:
+1. Difficulty in this gym comes from **UI-tool friction, precision, and judgment**, not from the
+   number of actions.
+2. A good curriculum should **fan out across different capabilities**, not re-skin the same
+   containment check at different sizes.
 
-So I built tasks that each stress a different part of the agent loop — *observe (screenshot) →
-reason → act (mouse/keyboard) → repeat* — and made sure no two share a failure mode. Each
-grader reads only the Excalidraw JSON returned by the canvas state; there is **no LLM grading**.
-The four submitted tasks pick one failure surface each:
+### Design principles (applied to every task)
+- **One distinct failure mode per task** — no two tasks fail for the same reason, and none reuses
+  the reference's containment mode.
+- **Grade canvas state, never pixels** — each grader reads only the Excalidraw JSON; there is no
+  LLM scoring anywhere.
+- **Pair the goal rubric with anti-hack rubrics** — so the reward can't be gamed by deleting
+  elements, dragging shapes apart, or duplicating a reference.
+- **Build in a non-obvious trap** — the "natural" action is often the wrong one, which is what
+  keeps the pass rate below 50%.
 
-- **Rotation about a pivot** → `set-the-clock` (turn a hand to a precise bearing while keeping
-  its base anchored — the rotate handle is a trap, it pivots about the element's middle).
-- **Multi-set spatial reasoning** → `arrange-the-venn` (three circles into a true Venn — every
-  pair overlaps *and* a region is common to all three; a loose row of overlaps fails).
-- **Exhaustive property transfer** → `match-the-style` (replicate six independent style fields
-  through the style panel; partial transfers that *look* close still fail).
-- **Toolbar discovery (breadth)** → `align-the-row` (flush tops + equal gaps, impractical to hit
-  by hand-dragging — the reliable path is the multi-select align/distribute controls). The most
-  conventional of the four; included so the curriculum also covers the alignment toolbar, a UI
-  surface none of the others touch.
+### Why these four tasks
+Each stresses a different point of the agent loop — *observe (screenshot) → reason → act → repeat*:
 
-Because the failure modes are independent, the four tasks probe genuinely different
-capabilities rather than one skill at several difficulties. Their empirical `pass_at_1` values
-land between 20% and 40% (20 / 40 / 20 / 20) — toward the harder end of the window, with
-`match-the-style` the most attainable.
+- **Rotation about a pivot** → `set-the-clock` — turn a hand to a precise bearing while keeping
+  its base anchored. *Trap:* the rotate handle pivots about the element's middle and detaches the base.
+- **Multi-set spatial reasoning** → `arrange-the-venn` — three circles into a true Venn where a
+  region is common to all three. *Trap:* a loose row of pairwise overlaps has no shared core.
+- **Exhaustive property transfer** → `match-the-style` — replicate six independent style fields.
+  *Trap:* copying the salient fill colour while missing fillStyle / strokeStyle / opacity.
+- **Alignment / distribution toolbar** → `align-the-row` — flush tops and equal gaps. *Trap:*
+  hand-dragging looks tidy but isn't precise; the reliable path is the multi-select align/distribute
+  controls.
+
+### How they vary
+The failure modes are independent, so the four probe **genuinely different capabilities** rather
+than one skill at several difficulties. Their empirical `pass_at_1` lands across the window
+(20 / 40 / 20 / 20), with `match-the-style` the most attainable. `align-the-row` is the most
+conventional of the four; it's included for breadth, to cover the alignment toolbar — a UI surface
+none of the others touch.
 
 ## Per-task detail
 
