@@ -1,0 +1,36 @@
+{
+  "result": 1,
+  "debug": "PASS five_boxes: All five boxes present at their original size\nPASS tops_aligned: All boxes' tops are aligned\nPASS in_a_row_no_overlap: Boxes form a row with no overlaps\nPASS evenly_spaced: Boxes are evenly spaced",
+  "metadata": {
+    "rubrics": {
+      "five_boxes": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "All five boxes present at their original size"
+      },
+      "tops_aligned": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "All boxes' tops are aligned"
+      },
+      "in_a_row_no_overlap": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Boxes form a row with no overlaps"
+      },
+      "evenly_spaced": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Boxes are evenly spaced"
+      }
+    }
+  }
+}

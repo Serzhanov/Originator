@@ -1,0 +1,36 @@
+{
+  "result": 0,
+  "debug": "PASS two_rectangles_preserved: Both rectangles preserved\nPASS geometry_unchanged: Neither rectangle was moved or resized\nPASS reference_untouched: The left reference rectangle is untouched\nFAIL target_style_matches: Style fields still differ from the reference \u2014 backgroundColor: '#ffc9c9' (expected '#ff6b6b')",
+  "metadata": {
+    "rubrics": {
+      "two_rectangles_preserved": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Both rectangles preserved"
+      },
+      "geometry_unchanged": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Neither rectangle was moved or resized"
+      },
+      "reference_untouched": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "The left reference rectangle is untouched"
+      },
+      "target_style_matches": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Style fields still differ from the reference \u2014 backgroundColor: '#ffc9c9' (expected '#ff6b6b')"
+      }
+    }
+  }
+}

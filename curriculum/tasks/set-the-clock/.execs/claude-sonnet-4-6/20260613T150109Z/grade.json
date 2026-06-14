@@ -1,0 +1,43 @@
+{
+  "result": 0,
+  "debug": "PASS face_preserved: Clock face preserved\nPASS two_hands: Both clock hands present\nFAIL hands_anchored_at_center: A hand's base end drifted more than 30px off the clock center \u2014 hands must stay attached to the pivot. (Note: the rotate handle pivots a hand about its own middle, which detaches its base.)\nPASS hour_points_to_4: Hour hand points to the 4\nPASS minute_points_to_12: Minute hand points to the 12 (North)",
+  "metadata": {
+    "rubrics": {
+      "face_preserved": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Clock face preserved"
+      },
+      "two_hands": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Both clock hands present"
+      },
+      "hands_anchored_at_center": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "A hand's base end drifted more than 30px off the clock center \u2014 hands must stay attached to the pivot. (Note: the rotate handle pivots a hand about its own middle, which detaches its base.)"
+      },
+      "hour_points_to_4": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Hour hand points to the 4"
+      },
+      "minute_points_to_12": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Minute hand points to the 12 (North)"
+      }
+    }
+  }
+}

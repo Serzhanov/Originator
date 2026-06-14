@@ -1,0 +1,83 @@
+set-the-clock:
+- path: curriculum/tasks/set-the-clock/.execs/claude-sonnet-4-6/20260613T150109Z
+  score: 0
+  message: 'hands_anchored_at_center: A hand''s base end drifted more than 30px off
+    the clock center — hands must stay attached to the pivot. (Note: the rotate handle
+    pivots a hand about its own middle, which detaches its base.)'
+- path: curriculum/tasks/set-the-clock/.execs/claude-sonnet-4-6/20260613T151302Z
+  score: 0
+  message: 'hour_points_to_4: Hour hand points at 0 deg from 12; expected ~120 deg
+    (to the 4).; minute_points_to_12: Minute hand points at 120 deg from 12; expected
+    ~0 deg (to the 12).'
+- path: curriculum/tasks/set-the-clock/.execs/claude-sonnet-4-6/20260613T152432Z
+  score: 0
+  message: 'hour_points_to_4: Hour hand points at 0 deg from 12; expected ~120 deg
+    (to the 4).'
+- path: curriculum/tasks/set-the-clock/.execs/claude-sonnet-4-6/20260613T153527Z
+  score: 0
+  message: 'hour_points_to_4: Hour hand points at 0 deg from 12; expected ~120 deg
+    (to the 4).; minute_points_to_12: Minute hand points at 9 deg from 12; expected
+    ~0 deg (to the 12).'
+- path: curriculum/tasks/set-the-clock/.execs/claude-sonnet-4-6/20260613T154647Z
+  score: 1
+match-the-style:
+- path: curriculum/tasks/match-the-style/.execs/claude-sonnet-4-6/20260613T130309Z
+  score: 1
+- path: curriculum/tasks/match-the-style/.execs/claude-sonnet-4-6/20260613T131400Z
+  score: 1
+- path: curriculum/tasks/match-the-style/.execs/claude-sonnet-4-6/20260613T132105Z
+  score: 0
+  message: 'two_rectangles_preserved: Expected exactly 2 rectangles, got 0.; geometry_unchanged:
+    Cannot check geometry — need exactly 2 rectangles.; reference_untouched: No reference
+    rectangle to check.; target_style_matches: No target rectangle to check.'
+- path: curriculum/tasks/match-the-style/.execs/claude-sonnet-4-6/20260613T133011Z
+  score: 0
+  message: 'target_style_matches: Style fields still differ from the reference — backgroundColor:
+    ''#ffc9c9'' (expected ''#ff6b6b'')'
+- path: curriculum/tasks/match-the-style/.execs/claude-sonnet-4-6/20260613T133219Z
+  score: 0
+  message: 'target_style_matches: Style fields still differ from the reference — backgroundColor:
+    ''#ffc9c9'' (expected ''#ff6b6b'')'
+arrange-the-venn:
+- path: curriculum/tasks/arrange-the-venn/.execs/claude-sonnet-4-6/20260613T164919Z
+  score: 0
+  message: 'shared_center: There is no region common to all three circles — the overlap
+    is too shallow. The very middle of the three centers must fall inside red AND
+    green AND blue at once (push the circles together more deeply).'
+- path: curriculum/tasks/arrange-the-venn/.execs/claude-sonnet-4-6/20260613T165057Z
+  score: 0
+  message: 'shared_center: There is no region common to all three circles — the overlap
+    is too shallow. The very middle of the three centers must fall inside red AND
+    green AND blue at once (push the circles together more deeply).'
+- path: curriculum/tasks/arrange-the-venn/.execs/claude-sonnet-4-6/20260613T165319Z
+  score: 0
+  message: 'shared_center: There is no region common to all three circles — the overlap
+    is too shallow. The very middle of the three centers must fall inside red AND
+    green AND blue at once (push the circles together more deeply).'
+- path: curriculum/tasks/arrange-the-venn/.execs/claude-sonnet-4-6/20260613T165715Z
+  score: 1
+- path: curriculum/tasks/arrange-the-venn/.execs/claude-sonnet-4-6/20260613T170851Z
+  score: 0
+  message: 'shared_center: There is no region common to all three circles — the overlap
+    is too shallow. The very middle of the three centers must fall inside red AND
+    green AND blue at once (push the circles together more deeply).'
+align-the-row:
+- path: curriculum/tasks/align-the-row/.execs/claude-sonnet-4-6/20260613T215357Z
+  score: 1
+- path: curriculum/tasks/align-the-row/.execs/claude-sonnet-4-6/20260613T215517Z
+  score: 0
+  message: 'evenly_spaced: Gaps between boxes are uneven — they range 20..40px (spread
+    20px, must be within 10px). Distribute the boxes so the gaps are equal.'
+- path: curriculum/tasks/align-the-row/.execs/claude-sonnet-4-6/20260613T215752Z
+  score: 0
+  message: 'five_boxes: Expected exactly 5 rectangles, got 1.; tops_aligned: Need
+    exactly 5 boxes.; in_a_row_no_overlap: Need exactly 5 boxes.; evenly_spaced: Need
+    exactly 5 boxes.'
+- path: curriculum/tasks/align-the-row/.execs/claude-sonnet-4-6/20260613T220522Z
+  score: 0
+  message: 'evenly_spaced: Gaps between boxes are uneven — they range 20..40px (spread
+    20px, must be within 10px). Distribute the boxes so the gaps are equal.'
+- path: curriculum/tasks/align-the-row/.execs/claude-sonnet-4-6/20260613T220656Z
+  score: 0
+  message: 'evenly_spaced: Gaps between boxes are uneven — they range 20..40px (spread
+    20px, must be within 10px). Distribute the boxes so the gaps are equal.'

@@ -1,0 +1,11 @@
+Two rectangles sit on the canvas: a styled one on the LEFT (the reference)
+and a plain one on the RIGHT.
+
+Restyle the RIGHT rectangle so its appearance exactly matches the LEFT
+reference: same fill color, same fill pattern, same stroke color, same
+stroke width, same stroke style, and same opacity.
+
+Do not change the LEFT rectangle in any way, and do not move or resize
+either rectangle.
+Selecting a shape opens the style panel on the left — it controls fill,
+stroke, and opacity.

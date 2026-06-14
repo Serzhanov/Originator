@@ -1,0 +1,25 @@
+prompt:
+  type: textual
+  data: |
+    The canvas has five rectangles of the same size scattered around at
+    different heights and uneven spacing.
+
+    Arrange them into one neat horizontal row so that:
+
+      1. All five boxes are aligned along the same top edge (their tops line up
+         exactly).
+      2. The gaps between neighbouring boxes are all equal (the boxes are evenly
+         distributed left-to-right).
+
+    The boxes must not overlap, and you must not resize them — keep each box the
+    size it already is. Their left-to-right order does not matter.
+hints:
+  type: textual
+  data: |
+    Getting the tops to line up and the gaps to come out equal by dragging each
+    box by hand is very hard to do precisely. Select all five boxes at once
+    (drag a selection box around them, or shift-click each) — when more than one
+    object is selected, Excalidraw shows alignment and distribution controls you
+    can use to align their tops and space them evenly in one step.
+data:
+  seed-json: ./seed.json

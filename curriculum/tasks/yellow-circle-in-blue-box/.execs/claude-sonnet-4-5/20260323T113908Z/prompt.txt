@@ -1,0 +1,2 @@
+Put the yellow circle inside the blue rectangle.
+The circle must be completely contained within the rectangle.

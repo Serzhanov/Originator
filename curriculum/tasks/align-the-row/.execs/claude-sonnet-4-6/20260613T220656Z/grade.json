@@ -1,0 +1,36 @@
+{
+  "result": 0,
+  "debug": "PASS five_boxes: All five boxes present at their original size\nPASS tops_aligned: All boxes' tops are aligned\nPASS in_a_row_no_overlap: Boxes form a row with no overlaps\nFAIL evenly_spaced: Gaps between boxes are uneven \u2014 they range 20..40px (spread 20px, must be within 10px). Distribute the boxes so the gaps are equal.",
+  "metadata": {
+    "rubrics": {
+      "five_boxes": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "All five boxes present at their original size"
+      },
+      "tops_aligned": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "All boxes' tops are aligned"
+      },
+      "in_a_row_no_overlap": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Boxes form a row with no overlaps"
+      },
+      "evenly_spaced": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Gaps between boxes are uneven \u2014 they range 20..40px (spread 20px, must be within 10px). Distribute the boxes so the gaps are equal."
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+prompt:
+  type: textual
+  data: |
+    Take a screenshot of the canvas and describe what you see, then stop. Do not make any changes.
+hints:
+  type: textual
+  data: |
+data:
+  seed-json: ./seed.json

@@ -1,0 +1,17 @@
+prompt:
+  type: textual
+  data: |
+    The canvas shows a clock. Both hands currently point straight up to the 12.
+
+    Rotate the hands so the clock reads 4:00 — the short hour hand pointing to
+    the 4 (lower-right), and the long minute hand pointing to the 12 (straight
+    up). Both hands must stay attached to the clock's center. Do not move the
+    clock face.
+hints:
+  type: textual
+  data: |
+    Select a hand and drag its tip (the end away from the center) to swing it
+    around — its base must stay on the clock center. The hour hand needs to
+    swing a third of the way around clockwise, to the 4.
+data:
+  seed-json: ./seed.json

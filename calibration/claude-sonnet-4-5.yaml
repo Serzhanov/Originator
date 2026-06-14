@@ -1,0 +1,15 @@
+yellow-circle-in-blue-box:
+- path: curriculum/tasks/yellow-circle-in-blue-box/.execs/claude-sonnet-4-5/20260323T113908Z
+  score: 1
+- path: curriculum/tasks/yellow-circle-in-blue-box/.execs/claude-sonnet-4-5/20260323T114116Z
+  score: 0
+  message: 'ellipse_within_rectangle: Ellipse is not fully contained within the rectangle
+    — it extends outside its bounds.'
+- path: curriculum/tasks/yellow-circle-in-blue-box/.execs/claude-sonnet-4-5/20260323T114712Z
+  score: 1
+- path: curriculum/tasks/yellow-circle-in-blue-box/.execs/claude-sonnet-4-5/20260323T114824Z
+  score: 1
+- path: curriculum/tasks/yellow-circle-in-blue-box/.execs/claude-sonnet-4-5/20260323T114836Z
+  score: 0
+  message: 'ellipse_within_rectangle: Ellipse is not fully contained within the rectangle
+    — it extends outside its bounds.'

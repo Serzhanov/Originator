@@ -1,0 +1,10 @@
+prompt:
+  type: textual
+  data: |
+    Put the yellow circle inside the blue rectangle.
+    The circle must be completely contained within the rectangle.
+hints:
+  type: textual
+  data: |
+data:
+  seed-json: ./seed.json

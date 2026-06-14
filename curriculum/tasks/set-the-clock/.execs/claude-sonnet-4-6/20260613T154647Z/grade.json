@@ -1,0 +1,43 @@
+{
+  "result": 1,
+  "debug": "PASS face_preserved: Clock face preserved\nPASS two_hands: Both clock hands present\nPASS hands_anchored_at_center: Both hands stay anchored at the clock center\nPASS hour_points_to_4: Hour hand points to the 4\nPASS minute_points_to_12: Minute hand points to the 12 (North)",
+  "metadata": {
+    "rubrics": {
+      "face_preserved": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Clock face preserved"
+      },
+      "two_hands": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Both clock hands present"
+      },
+      "hands_anchored_at_center": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Both hands stay anchored at the clock center"
+      },
+      "hour_points_to_4": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Hour hand points to the 4"
+      },
+      "minute_points_to_12": {
+        "pass": true,
+        "expected": true,
+        "actual": true,
+        "description": "",
+        "message": "Minute hand points to the 12 (North)"
+      }
+    }
+  }
+}

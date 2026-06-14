@@ -1,0 +1,19 @@
+The canvas shows three circles — a red one, a green one, and a blue one —
+spread out in a row, none of them touching.
+
+Move the circles together so they form a Venn diagram:
+
+  1. Every pair of circles must overlap each other.
+  2. All three circles must overlap together in one shared region in the
+     middle — there must be a central area that is inside red AND green AND
+     blue at the same time.
+  3. The three circles must still be clearly distinct (do not pile them all
+     on the same spot).
+
+Do not resize the circles — keep each one the size it already is. Only move
+them.
+Arrange the three circles like a classic Venn diagram — their centers
+forming a small triangle, overlapping deeply enough that the very middle
+falls inside all three at once. A shallow, barely-touching overlap will not
+leave a region common to all three. Drag each circle by its body; do not
+drag its resize handles.

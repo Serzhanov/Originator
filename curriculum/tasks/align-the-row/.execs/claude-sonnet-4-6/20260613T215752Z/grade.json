@@ -1,0 +1,36 @@
+{
+  "result": 0,
+  "debug": "FAIL five_boxes: Expected exactly 5 rectangles, got 1.\nFAIL tops_aligned: Need exactly 5 boxes.\nFAIL in_a_row_no_overlap: Need exactly 5 boxes.\nFAIL evenly_spaced: Need exactly 5 boxes.",
+  "metadata": {
+    "rubrics": {
+      "five_boxes": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Expected exactly 5 rectangles, got 1."
+      },
+      "tops_aligned": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Need exactly 5 boxes."
+      },
+      "in_a_row_no_overlap": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Need exactly 5 boxes."
+      },
+      "evenly_spaced": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Need exactly 5 boxes."
+      }
+    }
+  }
+}

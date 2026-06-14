@@ -1,0 +1,36 @@
+{
+  "result": 0,
+  "debug": "FAIL two_rectangles_preserved: Expected exactly 2 rectangles, got 0.\nFAIL geometry_unchanged: Cannot check geometry \u2014 need exactly 2 rectangles.\nFAIL reference_untouched: No reference rectangle to check.\nFAIL target_style_matches: No target rectangle to check.",
+  "metadata": {
+    "rubrics": {
+      "two_rectangles_preserved": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Expected exactly 2 rectangles, got 0."
+      },
+      "geometry_unchanged": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "Cannot check geometry \u2014 need exactly 2 rectangles."
+      },
+      "reference_untouched": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "No reference rectangle to check."
+      },
+      "target_style_matches": {
+        "pass": false,
+        "expected": true,
+        "actual": false,
+        "description": "",
+        "message": "No target rectangle to check."
+      }
+    }
+  }
+}
